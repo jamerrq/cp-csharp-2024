@@ -16,6 +16,6 @@ during the year 2024. Mostly from Codeforces, LeetCode, and Codewars.
 
 | # | Problem | Solution | Status | Source |
 |---|---------|----------|--------|--------|
-| 1 | [Wallet Exchange](https://codeforces.com/contest/1919/problem/A) | [C#](src/Codeforces/Wallet%20Exchange/Program.cs) | ![accepted](https://img.shields.io/badge/Accepted-44CC11?style=for-the-badge) | ![Codeforces](https://img.shields.io/badge/-Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white) |
+| 1 | [Wallet Exchange](https://codeforces.com/contest/1919/problem/A) | [C#](src/Codeforces/Wallet%20Exchange/Program.cs) | [![accepted](https://img.shields.io/badge/Accepted-44CC11?style=for-the-badge)](https://codeforces.com/contest/1919/submission/244600013) | [![Codeforces](https://img.shields.io/badge/-Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/) |
 
 </div>
