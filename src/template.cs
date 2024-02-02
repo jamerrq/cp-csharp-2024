@@ -14,7 +14,11 @@ public static class WalletExchange
     }
     public static void Main()
     {
-        var t = int.Parse(Console.ReadLine());
+        if (!int.TryParse(Console.ReadLine(), out var t))
+        {
+            Console.WriteLine("Invalid input");
+            return;
+        }
         for (var i = 0; i < t; i++)
         {
             Solve();

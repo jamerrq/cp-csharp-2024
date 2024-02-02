@@ -5,17 +5,15 @@ using System.Linq;
 * Problem: Wallet Exchange
 * URL: https://codeforces.com/contest/1919/problem/A
 * Status: AC
+* Time: 109 ms
+* Memory: 460 KB
 */
 public static class WalletExchange
 {
     private static void Solve()
     {
-        int sum = 0;
         string ans = "Bob";
-        foreach (var s in Console.ReadLine().Split())
-        {
-            sum += int.Parse(s);
-        }
+        var sum = Console.ReadLine().Split().Select(int.Parse).Sum();
         if (sum % 2 == 1)
         {
             ans = "Alice";
@@ -24,7 +22,11 @@ public static class WalletExchange
     }
     public static void Main()
     {
-        var t = int.Parse(Console.ReadLine());
+        if (!int.TryParse(Console.ReadLine(), out var t))
+        {
+            Console.WriteLine("Invalid input");
+            return;
+        }
         for (var i = 0; i < t; i++)
         {
             Solve();
