@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "create-problem",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "new",
+                "console",
+                "--name",
+                "${input:problemName}",
+                "--output",
+                "src/${input:Origin}/${input:problemName}",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "open-problem",
+            "type": "shell",
+            "command": "code",
+            "args": [
+                "--reuse-window",
+                "src/${input:Origin}/${input:problemName}/Program.cs"
+            ],
+            "dependsOn": [
+                "create-problem"
+            ],
+        }
+    ],
+    "inputs": [
+        {
+            "type": "pickString",
+            "id": "Origin",
+            "description": "Origin: ",
+            "options": [
+                "Codeforces",
+                "Codewars",
+                "LeetCode"
+            ],
+            "default": "Codeforces"
+        },
+        {
+            "type": "promptString",
+            "id": "problemName",
+            "description": "Problem name: ",
+            "default": "tmp-problem"
+        }
+    ]
+}
