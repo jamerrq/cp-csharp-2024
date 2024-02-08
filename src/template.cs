@@ -6,19 +6,15 @@ using System.Linq;
 * URL: [PROBLEM_URL]
 * Status: [AC|WA|TLE|RE|CE]
 */
-public static class WalletExchange
+public static class PROBLEM_NAME_CHANGEME
 {
     private static void Solve()
     {
-        // Brainstorm here
+        // Pinte seu código aqui
     }
     public static void Main()
     {
-        if (!int.TryParse(Console.ReadLine(), out var t))
-        {
-            Console.WriteLine("Invalid input");
-            return;
-        }
+        var t = int.Parse(Console.ReadLine() ?? "0");
         for (var i = 0; i < t; i++)
         {
             Solve();
