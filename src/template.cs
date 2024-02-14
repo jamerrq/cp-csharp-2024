@@ -6,18 +6,22 @@ using System.Linq;
 * URL: [PROBLEM_URL]
 * Status: [AC|WA|TLE|RE|CE]
 */
-public static class PROBLEM_NAME_CHANGEME
+
+namespace Problem
 {
-    private static void Solve()
+    public static class PROBLEM_NAME
     {
-        // Pinte seu código aqui
-    }
-    public static void Main()
-    {
-        var t = int.Parse(Console.ReadLine() ?? "0");
-        for (var i = 0; i < t; i++)
+        private static void Solve()
         {
-            Solve();
+            // Pinte seu código aqui
+        }
+        public static void Main()
+        {
+            var t = int.Parse(Console.ReadLine() ?? "0");
+            for (var i = 0; i < t; i++)
+            {
+                Solve();
+            }
         }
     }
 }
